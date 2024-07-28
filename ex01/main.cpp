@@ -6,11 +6,17 @@
 /*   By: rfinneru <rfinneru@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/07/27 15:58:18 by rfinneru      #+#    #+#                 */
-/*   Updated: 2024/07/27 17:27:17 by rfinneru      ########   odam.nl         */
+/*   Updated: 2024/07/28 13:17:33 by rfinneru      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "iter.hpp"
+
+template <typename T>
+void printT(T t)
+{
+    std::cout << t << std::endl;
+}
 
 void plusChar(char &c)
 {
@@ -29,14 +35,13 @@ int main(void)
 
     std::cout << "int array" << std::endl;
     for (int i = 0; i < 5; i++)
-        std::cout << arr[i] << std::endl;
+        printT(arr[i]);
 
     char str[6] = {"abcde"};
     ::iter(str, 5, plusChar);
     
     std::cout << "char array" << std::endl;
-    for (int i = 0; i < 5; i++)
-        std::cout << str[i] << std::endl;
+    printT(str);
         
     return (0);
 }

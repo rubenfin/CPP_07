@@ -6,7 +6,7 @@
 /*   By: rfinneru <rfinneru@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/07/27 15:58:14 by rfinneru      #+#    #+#                 */
-/*   Updated: 2024/07/27 17:22:02 by rfinneru      ########   odam.nl         */
+/*   Updated: 2024/12/13 17:20:27 by rfinneru      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 #include <iostream>
 #include <string>
 #include <array>
+#include <cstddef>
 
 template <typename T, typename F>
 void iter(T *address, size_t len, F function)

@@ -6,7 +6,7 @@
 /*   By: rfinneru <rfinneru@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/07/28 14:08:57 by rfinneru      #+#    #+#                 */
-/*   Updated: 2024/07/28 14:59:56 by rfinneru      ########   odam.nl         */
+/*   Updated: 2024/12/18 13:04:10 by rfinneru      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int main() {
         // Constructor with size
         Array<int> b(5);
         std::cout << "Size of b (constructor with size 5): " << b.size() << std::endl;
-
+    
         // Assigning values to b
         for (unsigned int i = 0; i < b.size(); ++i) {
             b[i] = i * 2;
